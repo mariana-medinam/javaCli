@@ -1,6 +1,6 @@
 FROM openjdk:19
-WORKDIR /NOME DA SUA PASTA
+WORKDIR / javaCli
 COPY . .
 RUN ls
-ENTRYPOINT java -jar NOME DO SEU EXECUTAVEL.jar
+ENTRYPOINT java -jar ExecCli.jar
 CMD ["bash","java","-jar" "Main"]
